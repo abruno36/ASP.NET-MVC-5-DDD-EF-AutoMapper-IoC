@@ -1,0 +1,44 @@
+﻿@model IEnumerable<ProjetoModeloDDD.MVC.ViewModels.ClienteViewModel>
+
+@{
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+<section class="content">
+    <div class="container">
+        <h4>CLientes Especiais</h4>
+        <br />
+        <a class="btn btn-success mt-3 mb-5" style="margin-bottom:10px" href="Clientes/Create"><i class="fa fa-plus-square"></i> Adicionar CLiente</a>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Ativo</th>
+                <th>Data Cadastro</th>
+                <th>Ultima Alteração</th>
+                <th style="width: 30%; text-align: center;">Opções</th>
+            </tr>
+            </thead>
+
+            @foreach (var item in Model)
+            {
+                <tr class="lista_paginas">
+                    <td>@Html.DisplayFor(modelItem => item.Nome)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Active)</td>
+                    <td>@item.DateCreated.ToString("dd/MM/yyyy")</td>
+                    <td>@item.DateUpdated.ToString("dd/MM/yyyy")</td>
+                    <td>
+                        <div class="btn-group d-flex">
+                            <a href="@Url.Action("Edit", new {id = item.ClienteId})" class="btn btn-primary"><i class='fa fa-pencil'></i> Editar</a>
+                            <a href="@Url.Action("Details", new {id = item.ClienteId})" class="btn btn-warning"><i class='fa fa-pencil'></i> Detalhes</a>
+                            <a href="@Url.Action("Delete", new {id = item.ClienteId})" class="btn btn-danger" onclick="return confirm('Você tem certeza que deseja excluir este Cliente?')"><i class='fa fa-trash'></i> Excluir</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</section>

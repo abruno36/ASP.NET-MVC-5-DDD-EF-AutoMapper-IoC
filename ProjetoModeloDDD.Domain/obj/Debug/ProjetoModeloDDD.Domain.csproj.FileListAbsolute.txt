@@ -1,0 +1,10 @@
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Domain\bin\Debug\ProjetoModeloDDD.Domain.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Domain\bin\Debug\ProjetoModeloDDD.Domain.pdb
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Domain\obj\Debug\ProjetoModeloDDD.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Domain\obj\Debug\ProjetoModeloDDD.Domain.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Domain\obj\Debug\ProjetoModeloDDD.Domain.pdb
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Domain\obj\Debug\ProjetoModeloDDD.Domain.csprojAssemblyReference.cache
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Domain\bin\Debug\nunit.framework.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Domain\bin\Debug\nunit.framework.pdb
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Domain\bin\Debug\nunit.framework.xml
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Domain\obj\Debug\ProjetoModeloDDD.Domain.csproj.CopyComplete

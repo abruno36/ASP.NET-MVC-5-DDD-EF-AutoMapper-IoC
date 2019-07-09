@@ -1,0 +1,17 @@
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Aplication.Services\bin\Debug\ProjetoModeloDDD.Aplication.Services.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Aplication.Services\bin\Debug\ProjetoModeloDDD.Aplication.Services.pdb
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Aplication.Services\bin\Debug\ProjetoModeloDDD.Domain.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Aplication.Services\bin\Debug\ProjetoModeloDDD.Infra.Data.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Aplication.Services\bin\Debug\EntityFramework.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Aplication.Services\bin\Debug\ProjetoModeloDDD.Domain.pdb
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Aplication.Services\bin\Debug\ProjetoModeloDDD.Infra.Data.pdb
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Aplication.Services\bin\Debug\ProjetoModeloDDD.Infra.Data.dll.config
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Aplication.Services\bin\Debug\EntityFramework.xml
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Aplication.Services\obj\Debug\ProjetoModeloDDD.Aplication.Services.csprojAssemblyReference.cache
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Aplication.Services\obj\Debug\ProjetoModeloDDD.Aplication.Services.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Aplication.Services\obj\Debug\ProjetoModeloDDD.Aplication.Services.csproj.CopyComplete
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Aplication.Services\obj\Debug\ProjetoModeloDDD.Aplication.Services.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Aplication.Services\obj\Debug\ProjetoModeloDDD.Aplication.Services.pdb
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Aplication.Services\bin\Debug\nunit.framework.dll
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Aplication.Services\bin\Debug\nunit.framework.pdb
+C:\Users\Usuario\Documents\Visual Studio 2017\!Projects\!ProjetoModeloDDD\ProjetoModeloDDD.Aplication.Services\bin\Debug\nunit.framework.xml

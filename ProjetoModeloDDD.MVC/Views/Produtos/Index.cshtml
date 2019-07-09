@@ -1,0 +1,60 @@
+﻿@model IEnumerable<ProjetoModeloDDD.MVC.ViewModels.ProdutoViewModel>
+
+@{
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+<section class="content">
+    <div class="title">
+        <h2 class="container">
+            <span class="row">
+                <span class="col-6">Cadastro de Produtos</span>
+            </span>
+        </h2>
+    </div>
+
+    <div class="container">
+        <a class="btn btn-success mt-3 mb-5" style="margin-bottom:10px" href="~/Produtos/Create"><i class="fa fa-plus-square"></i> Adicionar Produto</a>
+        <table class="table">
+            <tr>
+                <th style="width: 23%;">Nome</th>
+                <th style="width: 11%;">Valor</th>
+                <th style="width: 18%;">Cliente</th>
+                <th style="width: 8%;">Data Cadastro</th>
+                <th style="width: 8%;">Ultima Alteração</th>
+                <th>Ativo</th>
+                <th style="width: 38%; text-align: center;">Opções</th>
+            </tr>
+
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Valor)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Cliente.Nome)
+                    </td>
+                    <td>@item.DateCreated.ToString("dd/MM/yyyy")</td>
+                    <td>@item.DateUpdated.ToString("dd/MM/yyyy")</td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Active)
+                    </td>
+                    <td>
+                        <div class="btn-group d-flex">
+                            <a href="@Url.Action("Edit", new {id = item.ProdutoId})" class="btn btn-primary"><i class='fa fa-pencil'></i> Editar</a>
+                            <a href="@Url.Action("Details", new {id = item.ProdutoId})" class="btn btn-warning"><i class='fa fa-pencil'></i> Detalhes</a>
+                            @*<a href="@Url.Action("Delete", new {id = item.ProdutoId})" class="btn btn-danger" onclick="return confirm('Você tem certeza que deseja excluir este Produto?')"><i class='fa fa-trash'></i> Excluir</a>*@
+                            <a href="@Url.Action("Delete", new {id = item.ProdutoId})" class="btn btn-danger"><i class='fa fa-trash'></i> Excluir</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</section>

@@ -1,0 +1,79 @@
+﻿@model ProjetoModeloDDD.MVC.ViewModels.ProdutoViewModel
+
+@{
+    ViewBag.Title = "Detalhes";
+}
+
+
+<section class="content">
+
+    <div class="container">
+        <h2>Detalhes</h2>
+        <h4>ProdutoViewModel</h4>
+        <hr />
+        <dl class="container">
+            <dt>
+                @Html.DisplayNameFor(model => model.Nome)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Nome)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Valor)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Valor)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ClienteId)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ClienteId)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.DateCreated)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DateCreated)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.DateUpdated)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DateUpdated)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Active)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Active)
+            </dd>
+            <div class="clearfix">
+                <button type="button" class="btn btn-back btn-primary float-left" onclick="Voltar()">Voltar à listagem de Produtos</button>
+                <a href="@Url.Action("Edit", new {id = Model.ProdutoId})" class="btn btn-success float-right"> Alterar</a>
+            </div>
+        </dl>
+    </div>
+</section>
+
+@section Scripts {
+
+    <script>
+        function Voltar() {
+            window.location.href = "/Produtos/Index"
+        }
+
+
+    </script>
+}

@@ -1,0 +1,141 @@
+﻿@import 'mixins';
+@import 'variables';
+@import 'animations';
+
+body { font-family: $font; color: $textColor; }
+
+*:focus, *:hover { outline: 0 !important; }
+.form-control:focus, .btn:focus, .btn:not(:disabled):not(.disabled):active:focus, .btn:not(:disabled):not(.disabled).active:focus { box-shadow: none!important; }
+
+a, a:hover, li, li:hover { transition: all .3s ease-in-out; }
+
+::-webkit-scrollbar { width: 10px;height: 10px; transition:all 0.5s; }
+::-webkit-scrollbar-button { width: 0px; height: 0px; }
+::-webkit-scrollbar-thumb { background: $primaryColor; border: 0px none transparent; border-radius: 25px; transition:all 0.5s; }
+::-webkit-scrollbar-thumb:hover { opacity: 0.8; transition: 0.5s; }
+::-webkit-scrollbar-thumb:active { background: $secondaryColor; transition:all 0.5s; }
+::-webkit-scrollbar-track { background: transparent; border: 0px none transparent; border-radius: 0px; }
+::-webkit-scrollbar-track:hover { background: transparent; }
+::-webkit-scrollbar-track:active { background: transparent; }
+::-webkit-scrollbar-corner { background: transparent; }
+
+.btn-primary { display: inline-block; width: auto; color: #fff; background: $secondaryColor; border: 1px solid $secondaryColor; font-size: 14px; text-transform: uppercase; padding: 10px 25px; border-radius: 20px; line-height: 1; 
+    span { display: inline-block; }
+    &:after { content: ''; width: 12px; height: 11px; display: inline-block; @include bg('ico-right-expand.svg', no-repeat right); background-size: 40px; margin-left: 10px; margin-bottom: -1px; transition: .5s; }
+    &:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active  { transition: .5s; text-decoration: none; background: $primaryColor; box-shadow: none;
+        &:after { width: 40px; transition: .5s; }
+    }
+}
+
+.btn-back { font-size: 16px; text-transform: uppercase; padding: 15px 20px; border-radius: 40px; line-height: 1;
+    &:after { content: none; }
+    &:before { content: ''; width: 12px; height: 11px; display: inline-block; @include bg('ico-left-expand.svg', no-repeat left); background-size: 40px; margin-right: 10px; margin-bottom: 0; transition: .5s; }
+    &:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active  { transition: .5s; text-decoration: none; background: $primaryColor; box-shadow: none;
+        &:before { width: 40px; transition: .5s; }
+    }
+}
+
+.btn-success { display: inline-block; width: auto; color: #fff; background-color: $primaryColor; border: 1px solid $primaryColor; font-size: 16px; text-transform: uppercase; padding: 15px 45px; border-radius: 40px; line-height: 1;
+    &:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active { transition: .5s; text-decoration: none; background: #fff; border: 1px solid $primaryColor; color: $primaryColor; box-shadow: none; }
+}
+
+.login { display: flex; justify-content: center; -ms-justify-content: center; -ms-flex-align: center; -webkit-align-items: center; -webkit-box-align: center; align-items: center; -ms-flex-pack: center; padding: 100px 0;
+    .logo-pg { max-width: 300px; }
+
+    &-box { box-shadow: 0 0 20px rgba(black, .05); max-width: 600px; padding: 80px 50px; }
+
+    &-form { width: 500px; margin: 0 auto; padding: 0 50px; }
+    .input-group { margin: 20px auto; height: 3em; }
+    .input-group-text { background: #fff; border-radius: 0; border: 0; border-bottom: 1px solid #cfcfcf; color: #000; font-size: 20px; }
+    .form-control { height: 100%; border-radius: 0; border: 0; border-bottom: 1px solid #cfcfcf; 
+        &:focus { box-shadow: none; }
+    }
+
+}
+
+.header { padding: 25px 0;
+    p { margin: 0 0 10px; font-weight: 700; }
+    .logo { max-width: 190px; }
+    &-menu { padding: 0; margin: 0; list-style: none;
+        li { display: inline-block; background: $secondaryColor; border-radius: 20px; padding: 5px 25px; margin: 0 5px; color: #fff; box-shadow: 0 0 10px rgba(black, .05); 
+             &:last-child { margin-right: 0; }
+             &:hover { background: $primaryColor; }
+        }
+        a { display: inline-block; color: #fff; text-transform: uppercase; font-size: 16px; font-weight: 700;
+            &:hover { text-decoration: none; }
+        }
+    }
+}
+
+.content { padding-bottom: 50px; 
+  
+    .title { position: relative; padding: 20px 0 50px; margin: 0 0 20px;
+        &:before { content: ''; position: absolute; top: 0; left: 0; width: 50%; height: 100%; background: $primaryColor; z-index: -1; }
+        h2 { font-size: 40px; font-weight: 300; padding: 30px 0; color: #fff;
+            &:before { content: ''; display: block; width: 60px; height: 3px; background-color: #fff; margin:0 0 20px 0; }
+        }
+    }
+
+    &-box { box-shadow: 0 0 10px rgba(black, .05); padding: 40px; }
+
+    .select-div { position: relative; height: 3em; border: 1px solid #cfcfcf;
+        &:after { content: '<>'; font: 17px "Consolas", monospace; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); right: 11px; top: 13px; padding: 0 0 2px; position: absolute; pointer-events: none; }
+
+        select { -webkit-appearance: none; -moz-appearance: none; appearance: none; display: inline-block; width: 100%; background: #fff; -ms-word-break: normal; word-break: normal; }
+        
+        select::-ms-expand {  display: none; }
+    }
+
+    .input-group { height: 3em; border-bottom: 1px solid black; 
+        .select-div { display: flex; flex: 1 1 auto; width: 1%; height: auto; border: 0; }
+    }
+    .input-group-text { border: 0; border-radius: 0; background: #fff; color: #000; }
+    .form-control { height: 100%; border: 0; border-radius: 0; background: #fff; }
+
+    form { margin: 0 0 1.5rem; }
+
+    .btn-group {
+        .btn-primary { padding: 0.375rem 0.75rem; border-radius: 20px; line-height: 1.5;
+            &:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active { color: $secondaryColor; background: #fff; border: 1px solid $secondaryColor; }
+            &:after, &:before { content: none; }
+        }
+        .btn-danger { text-transform: uppercase; font-size: 14px; border-radius: 0 20px 20px 0;
+            &:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active { color: #dc3545; background: #fff; border: 1px solid #dc3545; }
+        }
+        .btn-info { text-transform: uppercase; font-size: 14px; border-radius: 0 20px 20px 0;
+            &:hover, &:focus, &:active, &:not(:disabled):not(.disabled):active { color: #138496; background: #fff; border: 1px solid #138496; }
+        }
+    }
+
+    .table { margin: 0;
+        thead th { border: 0; border-top: 1px solid #dee2e6; }
+        th, td { vertical-align: middle; }
+        td { padding: 1.5rem 0.75rem; }
+        tbody tr:last-child { border-bottom: 1px solid #dee2e6; }
+    }
+}
+
+.edit-content {
+    input.form-control { height: 3em; border: 1px solid #cfcfcf; margin-bottom: 1rem; }
+    input.disabled { display: flex; flex: 1 1 auto; width: 1%; border: 0; background: #fff; color: $textColor; }
+
+    input[type="number"] { width: 65px; -moz-appearance:textfield; }
+    input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+
+    .input-group.calendar { border: 0; margin-bottom: 1rem;
+        .datepicker { display: flex; flex: 1 1 auto; width: 1%; }
+        .ui-datepicker-trigger { display: flex; margin-left: -1px; height: 100%; border: 1px solid #cfcfcf; background: #fff; padding: 14px;  }
+    }
+
+    .note-editor {  margin-bottom: 1rem; }
+
+    label { display: block; margin: 0; }
+}
+
+.ui-datepicker { min-width: 290px; padding: 20px; background: $primaryColor; color: #fff; 
+    a { color: #fff; cursor: pointer; }
+    &-calendar { width: 100%; text-align: center; }
+    &-prev { float: right; }
+    &-next { float: left; }
+    &-title { clear: both; }
+}

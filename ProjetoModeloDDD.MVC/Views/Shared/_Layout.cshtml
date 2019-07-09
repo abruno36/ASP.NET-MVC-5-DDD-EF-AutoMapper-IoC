@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>@ViewBag.Title Projeto DDD</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/yik4cmu.css">
+
+    @Styles.Render("~/default/style")
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+               <div class="col-12 col-lg-9">
+                   <ul class="header-menu text-right">
+                       <li><a href="@Url.Action("Index", "Clientes")"><i class="fa fa-user-o" aria-hidden="true"></i> Clientes</a></li>
+                       <li><a href="@Url.Action("Index", "Produtos")"><i class="fa fa-user-o" aria-hidden="true"></i> Produtos</a></li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    @RenderBody()
+    <hr />
+    <footer class="container">
+        <p class="text-center">&copy; @DateTime.Now.Year Projeto DDD | Todos os Direitos Reservados.</p>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/summernote")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

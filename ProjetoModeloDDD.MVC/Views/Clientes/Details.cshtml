@@ -1,0 +1,56 @@
+﻿@model ProjetoModeloDDD.MVC.ViewModels.ClienteViewModel
+
+@{
+    ViewBag.Title = "Detalhes";
+}
+
+
+<section class="content">
+    
+    <div class="container">
+        <h2>Detalhes</h2>
+        <h4>ClienteViewModel</h4>
+        <hr />
+        <dl class="container">
+            <dt>
+                @Html.DisplayNameFor(model => model.Nome)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Nome)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+
+            <dd class="form-group">
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+
+            <dt class="form-group">
+                @Html.DisplayNameFor(model => model.Active)
+            </dt>
+
+            <dd class="form-group">
+                @Html.DisplayFor(model => model.Active)
+            </dd>
+
+        </dl>
+        <div class="clearfix">
+            <button type="button" class="btn btn-back btn-primary float-left" onclick="Voltar()">Voltar à listagem de Clientes</button>
+            <a href="@Url.Action("Edit", new {id = Model.ClienteId})" class="btn btn-success float-right"> Alterar</a>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+     
+    <script>
+        function Voltar() {
+            window.location.href = "/Clientes/Index"
+        }
+
+        
+    </script>
+}
